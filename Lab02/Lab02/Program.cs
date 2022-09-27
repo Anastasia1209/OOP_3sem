@@ -288,6 +288,32 @@ namespace Lab02
                     break;
             }
         }
+        private int GetHashCode()
+        {
+            var hashSum = 0;
+            for (int i = 0; i < name.Length; i++)
+            {
+                hashSum += Convert.ToInt32(name[i]);
+            }
+            return hashSum;
+        }
+        public override string ToString()
+        {
+            Console.WriteLine("Фамилия: " + surname);
+            Console.WriteLine("Имя: " + name);
+            Console.WriteLine("Отчество: " + patronymic);
+            Console.WriteLine("Дата рождения: " + birthDay);
+            Console.WriteLine("Адрес: " + adress);
+            Console.WriteLine("Номер телефона: " + number);
+            Console.WriteLine("Факультет: " + faculty);
+            Console.WriteLine("Курс: " + course);
+            Console.WriteLine("Группа: " + group);
+            return "";
+        }
+        public static int getStaticInfo()
+        {
+            return NumOfStudents;
+        }
 
     }
 
@@ -303,9 +329,17 @@ namespace Lab02
             arrStudents[3] = new Student("Ivanov", "Ivan", "Ivanovich", "10.01.2002", "Belorusskaya", "XTIT", 123456789, 2, 6);
             arrStudents[4] = new Student("Petrova", "Anna", "Sergeevna", "23.06.2001", "Belorusskaya", "PIM", 223366441, 3, 1);
             Console.WriteLine(arrStudents[0].Id);
-            
+            Console.WriteLine(Student.getStaticInfo());
+            string facultyExs = "FIT";
+            foreach (Student i in arrStudents)
+            {
+                Console.WriteLine(i.Name);
+                Console.WriteLine(i.getStudentAge());
+                Console.WriteLine(i.getStudenFaculty(ref facultyExs));
+                Console.WriteLine(i.getStudenGroup(4));
+                Console.WriteLine(i.getStudenGroup(4));
 
-            
+            }
         }
     }
 }
