@@ -272,6 +272,22 @@ namespace Lab02
                 return null;
             }
         }
+        //сравнение возраста студентов
+        public void Equals(Student stud1, Student stud2)
+        {
+            switch (String.Compare(stud1.birthDay, stud2.birthDay))
+            {
+                case 0:
+                    Console.WriteLine("Возраст студентов равен");
+                    break;
+                case 1:
+                    Console.WriteLine("Первый студент старше второго");
+                    break;
+                case -1:
+                    Console.WriteLine("Первый студент младше второго");
+                    break;
+            }
+        }
 
     }
 
