@@ -223,8 +223,56 @@ namespace Lab02
             NumOfStudents++;
             id = GetHashCode();
         }
+        //полный конструктор
+        public Student(string userSurname, string userName, string userPatron, string userBirth, string userAdress, string userFaculty, int userNum, int userCourse, int userGroup)
+        {
+            surname = userSurname;
+            name = userName;
+            patronymic = userPatron;
+            birthDay = userBirth;
+            adress = userAdress;
+            faculty = userFaculty;
+            number = userNum;
+            course = userCourse;
+            group = userGroup;
+            NumOfStudents++;
+            id = GetHashCode();
+        }
+        //статический конструктор
+        static Student()
+        {
+            NumOfStudents = 0;
+        }
+        public int getStudentAge()
+        {
+            int Age = Convert.ToInt32(birthDay.Substring(6));
+            return DateTime.Now.Year - Age;
+        }
 
-       
+        public string getStudenFaculty(ref string facult)
+        {
+            if (facult == faculty)
+            {
+                return name;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public string getStudenGroup(int groupe)
+        {
+            if (groupe == group)
+            {
+                return name;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
     }
 
     class Program
