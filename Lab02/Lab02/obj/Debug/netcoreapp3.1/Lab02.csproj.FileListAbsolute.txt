@@ -12,3 +12,17 @@ D:\Универ\2курс\ООП\Lab02\Lab02\obj\Debug\netcoreapp3.1\Lab02.cspro
 D:\Универ\2курс\ООП\Lab02\Lab02\obj\Debug\netcoreapp3.1\Lab02.dll
 D:\Универ\2курс\ООП\Lab02\Lab02\obj\Debug\netcoreapp3.1\Lab02.pdb
 D:\Универ\2курс\ООП\Lab02\Lab02\obj\Debug\netcoreapp3.1\Lab02.genruntimeconfig.cache
+D:\Универ\2курс\OOP_3sem\Lab02\Lab02\bin\Debug\netcoreapp3.1\Lab02.exe
+D:\Универ\2курс\OOP_3sem\Lab02\Lab02\bin\Debug\netcoreapp3.1\Lab02.deps.json
+D:\Универ\2курс\OOP_3sem\Lab02\Lab02\bin\Debug\netcoreapp3.1\Lab02.runtimeconfig.json
+D:\Универ\2курс\OOP_3sem\Lab02\Lab02\bin\Debug\netcoreapp3.1\Lab02.runtimeconfig.dev.json
+D:\Универ\2курс\OOP_3sem\Lab02\Lab02\bin\Debug\netcoreapp3.1\Lab02.dll
+D:\Универ\2курс\OOP_3sem\Lab02\Lab02\bin\Debug\netcoreapp3.1\Lab02.pdb
+D:\Универ\2курс\OOP_3sem\Lab02\Lab02\obj\Debug\netcoreapp3.1\Lab02.csproj.AssemblyReference.cache
+D:\Универ\2курс\OOP_3sem\Lab02\Lab02\obj\Debug\netcoreapp3.1\Lab02.GeneratedMSBuildEditorConfig.editorconfig
+D:\Универ\2курс\OOP_3sem\Lab02\Lab02\obj\Debug\netcoreapp3.1\Lab02.AssemblyInfoInputs.cache
+D:\Универ\2курс\OOP_3sem\Lab02\Lab02\obj\Debug\netcoreapp3.1\Lab02.AssemblyInfo.cs
+D:\Универ\2курс\OOP_3sem\Lab02\Lab02\obj\Debug\netcoreapp3.1\Lab02.csproj.CoreCompileInputs.cache
+D:\Универ\2курс\OOP_3sem\Lab02\Lab02\obj\Debug\netcoreapp3.1\Lab02.dll
+D:\Универ\2курс\OOP_3sem\Lab02\Lab02\obj\Debug\netcoreapp3.1\Lab02.pdb
+D:\Универ\2курс\OOP_3sem\Lab02\Lab02\obj\Debug\netcoreapp3.1\Lab02.genruntimeconfig.cache
