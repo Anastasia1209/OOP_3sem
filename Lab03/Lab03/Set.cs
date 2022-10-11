@@ -49,6 +49,21 @@ namespace Lab03
             }
             return third;
         }
+        public class Production
+        {
+            public static int id = 4;
+            public static string organisation = "BSTU";
+        }
+
+        Production prod = new Production();
+        
+        public class Developer
+        {
+            public string dev = "Golodok Anastasiya";
+            public int id = 12;
+            public string dep = "fit";
+        }
+
 
     }
 }
