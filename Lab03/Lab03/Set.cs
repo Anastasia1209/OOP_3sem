@@ -63,7 +63,5 @@ namespace Lab03
             public int id = 12;
             public string dep = "fit";
         }
-
-
     }
 }

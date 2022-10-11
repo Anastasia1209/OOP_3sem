@@ -43,6 +43,31 @@ namespace Lab03
             }
             return numOfEl;
         }
+        public static MySet AddDot(this MySet first)
+        {
+            foreach(string strDot in first.collection)
+            {
+                strDot.Insert(strDot.Length - 1, ".");
+            }
+            return first;
+        }
 
+        public static string AddDot(this string first)
+        {
+            first.Insert(first.Length - 1, ".");
+            return first;
+        }
+
+        public static MySet DeleteNull(this MySet first)
+        {
+            foreach(string strNull in first.collection)
+            {
+                if(strNull == "")
+                {
+                    first.collection.Remove(strNull);
+                }
+            }
+            return first;
+        }
     }
 }
