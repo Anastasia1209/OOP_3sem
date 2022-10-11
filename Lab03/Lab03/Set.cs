@@ -23,45 +23,77 @@ namespace Lab03
             return collection;
         }
 
-        public static MySet operator -(MySet first, string second)
+        public void Show()
         {
-            first.collection.Remove(second);
-            return first;
+            foreach (string item in collection)
+            {
+                Console.WriteLine(item);
+            }
         }
-        public static dynamic operator *(MySet first, MySet third)
+        public void AddItem(string item)
         {
-            var set4 = first.collection.Intersect(third.collection);
+            collection.Add(item);
+        }
+
+        public static MySet operator -(MySet set1, string second)
+        {
+            set1.collection.Remove(second);
+            return set1;
+        }
+        public static dynamic operator *(MySet set1, MySet set3)
+        {
+            var set4 = set1.collection.Intersect(set3.collection);
             return set4;
         }
-        public static bool operator <(MySet first, MySet third)
+        public static bool operator <(MySet set1, MySet set3)
         {
-            return first.Size < third.Size;
+            return set1.Size < set3.Size;
         }
-        public static bool operator >(MySet first, MySet third)
+        public static bool operator >(MySet set1, MySet set3)
         {
-            return third.collection.IsSubsetOf(first.collection);
+            return set3.collection.IsSubsetOf(set1.collection);
         }
-        public static MySet operator &(MySet first, MySet third)
+        public static MySet operator &(MySet set1, MySet set3)
         {
-           foreach(string set5 in first.collection)
+           foreach(string set5 in set1.collection)
             {
-                third.collection.Add(set5);
+                set3.collection.Add(set5);
             }
-            return third;
+            return set3;
         }
         public class Production
         {
-            public static int id = 4;
-            public static string organisation = "BSTU";
+            public int id;
+            public string nameOrganization;
+            public Production(int id, string nameOrganization)
+            {
+                this.id = id;
+                this.nameOrganization = nameOrganization;
+            }
+            public void Show()
+            {
+                Console.WriteLine("ID: " + id);
+                Console.WriteLine("Organization: " + nameOrganization);
+            }
         }
-
-        Production prod = new Production();
         
         public class Developer
         {
-            public string dev = "Golodok Anastasiya";
-            public int id = 12;
-            public string dep = "fit";
+            public int id;
+            public string name;
+            public string department;
+            public Developer(int id, string name, string dep)
+            {
+                this.id = id;
+                this.name = name;
+                this.department = dep;
+            }
+            public void Show()
+            {
+                Console.WriteLine("ID: " + id);
+                Console.WriteLine("Name: " + name);
+                Console.WriteLine("Department: " + department);
+            }
         }
     }
 }

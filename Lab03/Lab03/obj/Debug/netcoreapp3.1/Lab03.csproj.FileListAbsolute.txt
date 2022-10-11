@@ -1,0 +1,14 @@
+D:\Универ\2курс\OOP_3sem\Lab03\Lab03\bin\Debug\netcoreapp3.1\Lab03.exe
+D:\Универ\2курс\OOP_3sem\Lab03\Lab03\bin\Debug\netcoreapp3.1\Lab03.deps.json
+D:\Универ\2курс\OOP_3sem\Lab03\Lab03\bin\Debug\netcoreapp3.1\Lab03.runtimeconfig.json
+D:\Универ\2курс\OOP_3sem\Lab03\Lab03\bin\Debug\netcoreapp3.1\Lab03.runtimeconfig.dev.json
+D:\Универ\2курс\OOP_3sem\Lab03\Lab03\bin\Debug\netcoreapp3.1\Lab03.dll
+D:\Универ\2курс\OOP_3sem\Lab03\Lab03\bin\Debug\netcoreapp3.1\Lab03.pdb
+D:\Универ\2курс\OOP_3sem\Lab03\Lab03\obj\Debug\netcoreapp3.1\Lab03.csproj.AssemblyReference.cache
+D:\Универ\2курс\OOP_3sem\Lab03\Lab03\obj\Debug\netcoreapp3.1\Lab03.GeneratedMSBuildEditorConfig.editorconfig
+D:\Универ\2курс\OOP_3sem\Lab03\Lab03\obj\Debug\netcoreapp3.1\Lab03.AssemblyInfoInputs.cache
+D:\Универ\2курс\OOP_3sem\Lab03\Lab03\obj\Debug\netcoreapp3.1\Lab03.AssemblyInfo.cs
+D:\Универ\2курс\OOP_3sem\Lab03\Lab03\obj\Debug\netcoreapp3.1\Lab03.csproj.CoreCompileInputs.cache
+D:\Универ\2курс\OOP_3sem\Lab03\Lab03\obj\Debug\netcoreapp3.1\Lab03.dll
+D:\Универ\2курс\OOP_3sem\Lab03\Lab03\obj\Debug\netcoreapp3.1\Lab03.pdb
+D:\Универ\2курс\OOP_3sem\Lab03\Lab03\obj\Debug\netcoreapp3.1\Lab03.genruntimeconfig.cache
