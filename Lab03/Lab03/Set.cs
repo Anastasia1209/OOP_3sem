@@ -8,7 +8,6 @@ namespace Lab03
 {
     public class MySet
     {
-//        private readonly Owner owner;
         public HashSet<String> collection;
         public int Size;
 
@@ -35,6 +34,20 @@ namespace Lab03
             collection.Add(item);
         }
 
+        // Получение элемента множества по индексу
+        public string GetItemByIndex(int index)                     
+        {
+            int count = 0;
+            foreach (string temp in collection)
+            {
+                if (count == index) return temp;
+                count++;
+            }
+
+            return "Index out of range";
+        }
+
+        //перегрузки
         public static MySet operator -(MySet set1, string second)
         {
             set1.collection.Remove(second);

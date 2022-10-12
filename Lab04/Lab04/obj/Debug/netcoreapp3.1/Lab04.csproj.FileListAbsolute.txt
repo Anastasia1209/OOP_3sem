@@ -1,0 +1,5 @@
+D:\Универ\2курс\OOP_3sem\Lab04\Lab04\obj\Debug\netcoreapp3.1\Lab04.csproj.AssemblyReference.cache
+D:\Универ\2курс\OOP_3sem\Lab04\Lab04\obj\Debug\netcoreapp3.1\Lab04.GeneratedMSBuildEditorConfig.editorconfig
+D:\Универ\2курс\OOP_3sem\Lab04\Lab04\obj\Debug\netcoreapp3.1\Lab04.AssemblyInfoInputs.cache
+D:\Универ\2курс\OOP_3sem\Lab04\Lab04\obj\Debug\netcoreapp3.1\Lab04.AssemblyInfo.cs
+D:\Универ\2курс\OOP_3sem\Lab04\Lab04\obj\Debug\netcoreapp3.1\Lab04.csproj.CoreCompileInputs.cache
