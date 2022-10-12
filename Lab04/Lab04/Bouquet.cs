@@ -16,6 +16,10 @@ namespace Lab04
         {
             costOfBouquet = costBouq;
         }
+        public override string ToString()
+        {
+            return $"Тип: {this.GetType()}, цена: {CostOfBouquet}";
+        }
     }
     class Rose : Bouquet
     {
@@ -28,6 +32,10 @@ namespace Lab04
         public Rose(string color, int cost) : base(cost)
         {
             colorOfRose = color;
+        }
+        public override string ToString()
+        {
+            return $"Тип: {this.GetType()}, цена: {CostOfBouquet}, цвет роз: {ColorOfRose}";
         }
     }
     class Gladiolus : Bouquet
@@ -42,6 +50,10 @@ namespace Lab04
         {
             numOfFlow = num;
         }
+        public override string ToString()
+        {
+            return $"Тип: {this.GetType()}, цена: {CostOfBouquet}, цвет роз: {NumOfFlow}";
+        }
     }
     sealed class Paper : Bouquet
     {
@@ -54,6 +66,10 @@ namespace Lab04
         public Paper(string type, int cost) : base(cost)
         {
             typeOfPaper = type;
+        }
+        public override string ToString()
+        {
+            return $"Тип: {this.GetType()}, цпривета: {CostOfBouquet}, вид бумаги: {TypeOfPaper}";
         }
     }
 

@@ -6,6 +6,10 @@ using System.Linq;
 
 namespace Lab04
 {
+    interface IGrowing
+    {
+        void Grow();
+    }
     public abstract class Plant
     {
         private string mounthOfFlowering;
@@ -18,8 +22,24 @@ namespace Lab04
         {
             mounthOfFlowering = mounthFlow;
         }
+        public override string ToString()
+        {
+            return $"Тип: {this.GetType()}, месяц: {MounthOfFlowering}";
+        }
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+        public virtual void GetInfo()
+        {
+            Console.WriteLine("Артем лох!");
+        }
     } 
-    class Bush : Plant
+    class Bush : Plant, IGrowing
     {
         private string heightOfBush;
         public string HeightOfBush
@@ -27,12 +47,31 @@ namespace Lab04
              get { return heightOfBush; }
              set { heightOfBush = value; }
         }
-        public Bush(string height, string mounth) : base(mounth)
+        private string nameOfBush;
+        public string NameOfBush
+        {
+            get { return nameOfBush; }
+            set { nameOfBush = value; }
+        }
+        public Bush(string height, string name, string mounth) : base(mounth)
         {
              heightOfBush = height;
+            nameOfBush = name;
+        }
+        public void Grow()
+        {
+            Console.WriteLine("Куст растет 2 года");
+        }
+        public override string ToString()
+        {
+            return $"Тип: {this.GetType()}, месяц: {MounthOfFlowering}, высота куста: {HeightOfBush}, название: {NameOfBush} ";
+        }
+        public override void GetInfo()
+        {
+            Console.WriteLine("Артем куст, а я чебурашка:)");
         }
     }
-     class Flower : Plant
+     class Flower : Plant, IGrowing
      {
         private string colorOfFlower;
         public string ColorOfFlower
@@ -44,8 +83,16 @@ namespace Lab04
         {
             colorOfFlower = color;
         }
-     }
-    class Cactus : Plant
+        public void Grow()
+        {
+            Console.WriteLine("Цветок растет 2 месяца");
+        }
+        public override string ToString()
+        {
+            return $"Тип: {this.GetType()}, месяц: {MounthOfFlowering}, цвет: {ColorOfFlower}";
+        }
+    }
+    class Cactus : Plant, IGrowing
     {
         private int numOfNeedle;
         public int NumOfNeedle
@@ -57,9 +104,15 @@ namespace Lab04
         {
             numOfNeedle = needle;
         }
+        public void Grow()
+        {
+            Console.WriteLine("Кактус растет много лет");
+        }
+        public override string ToString()
+        {
+            return  $"Тип: {this.GetType()}, месяц: {MounthOfFlowering}, высота куста: {NumOfNeedle} ";
+        }
+       
     }
-    interface IGetInfo
-    {
-        void ToString();
-    }
+    
 }
