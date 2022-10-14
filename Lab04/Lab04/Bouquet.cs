@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab04
 {
-    public abstract class Bouquet
+    public class Bouquet
     {
         private int costOfBouquet;
         public int CostOfBouquet
