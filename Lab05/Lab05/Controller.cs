@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
+using System.Text.Json;
 
 namespace Lab05
 {
@@ -52,6 +54,55 @@ namespace Lab05
             {
                 Console.WriteLine("Розы такого цвета нет в букете :(");
             }
+        }
+        public  Container GetContainer()
+        {
+            string path = "lab5.txt";
+            StreamReader reader = new StreamReader(path);
+            string? line;
+            Container container = new Container();
+            while((line = reader.ReadLine()) != null)
+            {
+                string[] arr = line.Split(' ');
+                switch (arr[0])
+                {
+                    case "Rose":
+                        Rose rose4 = new Rose(arr[1], Convert.ToInt32(arr[2]));
+                        container.Add(rose4);
+                        break;
+                    case "Gladiolus":
+                        Gladiolus gladiolus4 = new Gladiolus(Convert.ToInt32(arr[1]), Convert.ToInt32(arr[2]));
+                        container.Add(gladiolus4);
+                        break;
+                    case "Paper":
+                        Paper paper5 = new Paper(arr[1], Convert.ToInt32(arr[2]));
+                        container.Add(paper5);
+                        break;
+                }
+            }
+            return container;
+        }
+        public Container GetJsonContainer()
+        {
+            string json = "l5.json";
+            Container container = new Container();
+            Rose? rose = JsonSerializer.Deserialize<Rose>(json);
+            Gladiolus? glad = JsonSerializer.Deserialize<Gladiolus>(json);
+            Paper? paper = JsonSerializer.Deserialize<Paper>(json);
+
+            if (rose != null)
+            {
+                container.Add(rose);
+            }
+            if (glad != null)
+            {
+                container.Add(glad);
+            }
+            if (paper != null)
+            {
+                container.Add(paper);
+            }
+            return container;
         }
     }
 }
