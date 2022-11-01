@@ -1,0 +1,9 @@
+01.11.2022 2:20:30
+Error code 1: Uncorrect number.
+слишком много цветов 9
+02.11.2022 0:04:21
+Error code 1: Uncorrect number.
+слишком много цветов 9
+02.11.2022 0:06:28
+Error code 1: Uncorrect color.
+Ужасный цвет депрессии, где ты нашел такую розу??? purple

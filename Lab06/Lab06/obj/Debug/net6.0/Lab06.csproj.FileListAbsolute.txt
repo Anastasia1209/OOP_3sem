@@ -1,0 +1,15 @@
+D:\Универ\2курс\OOP_3sem\Lab06\Lab06\bin\Debug\net6.0\Lab06.exe
+D:\Универ\2курс\OOP_3sem\Lab06\Lab06\bin\Debug\net6.0\Lab06.deps.json
+D:\Универ\2курс\OOP_3sem\Lab06\Lab06\bin\Debug\net6.0\Lab06.runtimeconfig.json
+D:\Универ\2курс\OOP_3sem\Lab06\Lab06\bin\Debug\net6.0\Lab06.dll
+D:\Универ\2курс\OOP_3sem\Lab06\Lab06\bin\Debug\net6.0\Lab06.pdb
+D:\Универ\2курс\OOP_3sem\Lab06\Lab06\obj\Debug\net6.0\Lab06.csproj.AssemblyReference.cache
+D:\Универ\2курс\OOP_3sem\Lab06\Lab06\obj\Debug\net6.0\Lab06.GeneratedMSBuildEditorConfig.editorconfig
+D:\Универ\2курс\OOP_3sem\Lab06\Lab06\obj\Debug\net6.0\Lab06.AssemblyInfoInputs.cache
+D:\Универ\2курс\OOP_3sem\Lab06\Lab06\obj\Debug\net6.0\Lab06.AssemblyInfo.cs
+D:\Универ\2курс\OOP_3sem\Lab06\Lab06\obj\Debug\net6.0\Lab06.csproj.CoreCompileInputs.cache
+D:\Универ\2курс\OOP_3sem\Lab06\Lab06\obj\Debug\net6.0\Lab06.dll
+D:\Универ\2курс\OOP_3sem\Lab06\Lab06\obj\Debug\net6.0\refint\Lab06.dll
+D:\Универ\2курс\OOP_3sem\Lab06\Lab06\obj\Debug\net6.0\Lab06.pdb
+D:\Универ\2курс\OOP_3sem\Lab06\Lab06\obj\Debug\net6.0\Lab06.genruntimeconfig.cache
+D:\Универ\2курс\OOP_3sem\Lab06\Lab06\obj\Debug\net6.0\ref\Lab06.dll
