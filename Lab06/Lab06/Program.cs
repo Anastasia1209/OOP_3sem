@@ -67,6 +67,10 @@ namespace Lab06
                 Console.WriteLine("Ошиииибка:(" + "\n");
             }
 
+            Debugger.Break();
+
+            int deb = 10;
+            Debug.Assert(deb == 11, "не равно 10");
         }
     }
 }
