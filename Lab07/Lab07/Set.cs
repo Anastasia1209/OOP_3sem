@@ -134,6 +134,44 @@ namespace Lab07
                 Console.WriteLine("Department: " + department);
             }
         }
-        
+        public void InFile()
+        {
+            string path = "lab7.txt";
+            StreamWriter writer = new StreamWriter(path);
+            writer.WriteLine(Size);
+            foreach(T item in collection)
+            {
+                writer.Write(item + " ");
+            }
+            writer.WriteLine();
+            foreach (T temp in list)
+            {
+                writer.Write(temp + " ");
+            }
+        }
+        public MySet<T> GetFile()
+        {
+            string path = "lab7.txt";
+            StreamReader reader = new StreamReader(path);
+            string? line;
+            line = reader.ReadLine();
+            string[] arr = line.Split(' ');
+            MySet<T> set = new MySet<T>(Convert.ToInt32(Size));
+            line = reader.ReadLine();
+            string[] arr1 = line.Split(' ');
+            for (int i = 0; i < arr1.Length; i++)
+            {
+                T tmp = (T)Convert.ChangeType(arr1[i].GetType(), list.GetType());
+                set.Add(tmp);
+            }
+            line = reader.ReadLine();
+            string[] arr2 = line.Split(' ');
+            for (int i = 0; i < arr2.Length; i++)
+            {
+                T tmp = (T)Convert.ChangeType(arr2[i].GetType(), list.GetType());
+                set.Add(tmp);
+            }
+            return set;
+        }
     }
 }
