@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "otAGjTr1aeuWLimk1yhF+FGYMI6MuGURZj8AFP/WVCt0lB76GGqU2BEIauPezOwIRbnEF5Ria3ZKW7eFs3B8bw==",
+  "dgSpecHash": "jewTic1OkwlvxGwUYbiIIC2sYk624nXMDJCtcWEFgwjf3e+2RDVbXM098vl8tFrZ05o4XHQ3wJFxuC5R8OS2Pw==",
   "success": true,
   "projectFilePath": "D:\\Универ\\2курс\\OOP_3sem\\Lab05\\Lab05\\Lab05.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Настенька\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.30\\microsoft.netcore.app.host.win-x64.3.1.30.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

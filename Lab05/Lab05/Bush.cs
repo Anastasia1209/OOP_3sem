@@ -36,4 +36,15 @@ namespace Lab05
                 Console.WriteLine("Артем куст, а я чебурашка:)");
             }
         }
+    public partial class Flower : Plant
+    {
+        public void Grow()
+        {
+            Console.WriteLine("Цветок растет 2 месяца");
+        }
+        public override string ToString()
+        {
+            return $"Тип: {this.GetType()}, месяц: {MounthOfFlowering}, цвет: {ColorOfFlower}";
+        }
     }
+}

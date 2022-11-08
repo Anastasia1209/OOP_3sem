@@ -21,9 +21,9 @@ namespace Lab05
             return $"Тип: {this.GetType()}, цена: {CostOfBouquet}";
         }
 
-        struct bouquet
+        struct Paper
         {
-            public string name;
+            public string type;
             public int cost;
            
         }

@@ -10,7 +10,7 @@ namespace Lab05
     {
         void Grow();
     }
-    public abstract partial class Plant
+    public abstract class Plant
     {
         private string mounthOfFlowering;
         public virtual string MounthOfFlowering
@@ -40,7 +40,7 @@ namespace Lab05
         }
     }
 
-    class Flower : Plant, IGrowing
+    partial class Flower : Plant, IGrowing
     {
         private string colorOfFlower;
         public string ColorOfFlower
@@ -52,14 +52,14 @@ namespace Lab05
         {
             colorOfFlower = color;
         }
-        public void Grow()
+       /* public void Grow()
         {
             Console.WriteLine("Цветок растет 2 месяца");
         }
         public override string ToString()
         {
             return $"Тип: {this.GetType()}, месяц: {MounthOfFlowering}, цвет: {ColorOfFlower}";
-        }
+        }*/
     }
   
 

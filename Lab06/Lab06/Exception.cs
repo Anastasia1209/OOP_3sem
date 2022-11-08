@@ -24,7 +24,6 @@ namespace Lab06
         public CostException(string message, int errorCost)
             : base(message, "Error code 1: Uncorrect cost.\n")  // наследуем message и errorClass от MyException
         {
-
             this.Cost = errorCost;
         }
     }
@@ -35,7 +34,6 @@ namespace Lab06
         public ColorException(string message, string errorColor)
             : base(message, "Error code 1: Uncorrect color.\n")  // наследуем message и errorClass от MyException
         {
-
             this.Color = errorColor;
         }
     }
@@ -46,7 +44,6 @@ namespace Lab06
         public NumException(string message, int errorNum)
             : base(message, "Error code 1: Uncorrect number.\n")  // наследуем message и errorClass от MyException
         {
-
             this.Num = errorNum;
         }
     }
