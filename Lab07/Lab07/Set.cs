@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using System.Collections;
+using System.ComponentModel;
 
 namespace Lab07
 {
@@ -34,27 +35,27 @@ namespace Lab07
         }
 
 
-        public HashSet<String> collection;
+        public HashSet<T> collection;
         public int Size;
 
         public MySet(int size)
         {
-            collection = new HashSet<string>();
+            collection = new HashSet<T>();
             Size = size;
         }
-        public HashSet<string> GetHash()
+        public HashSet<T> GetHash()
         {
             return collection;
         }
 
         public void Show()
         {
-            foreach (string item in collection)
+            foreach (T item in collection)
             {
                 Console.WriteLine(item);
             }
         }
-        public void AddItem(string item)
+        public void AddItem(T item)
         {
             collection.Add(item);
         }
@@ -63,9 +64,9 @@ namespace Lab07
         public string GetItemByIndex(int index)                     
         {
             int count = 0;
-            foreach (string temp in collection)
+            foreach (T temp in collection)
             {
-                if (count == index) return temp;
+                if (count == index) return Convert.ToString(temp);
                 count++;
             }
 
@@ -73,27 +74,27 @@ namespace Lab07
         }
 
         //перегрузки
-        public static MySet operator -(MySet set1, string second)
+        public static MySet<T> operator -(MySet<T> set1, T second)
         {
             set1.collection.Remove(second);
             return set1;
         }
-        public static dynamic operator *(MySet set1, MySet set3)
+        public static dynamic operator *(MySet<T> set1, MySet<T> set3)
         {
             var set4 = set1.collection.Intersect(set3.collection);
             return set4;
         }
-        public static bool operator <(MySet set1, MySet set3)
+        public static bool operator <(MySet<T> set1, MySet<T> set3)
         {
             return set1.Size < set3.Size;
         }
-        public static bool operator >(MySet set1, MySet set3)
+        public static bool operator >(MySet<T> set1, MySet<T> set3)
         {
             return set3.collection.IsSubsetOf(set1.collection);
         }
-        public static MySet operator &(MySet set1, MySet set3)
+        public static MySet<T> operator &(MySet<T> set1, MySet<T> set3)
         {
-           foreach(string set5 in set1.collection)
+           foreach(T set5 in set1.collection)
             {
                 set3.collection.Add(set5);
             }
@@ -133,5 +134,6 @@ namespace Lab07
                 Console.WriteLine("Department: " + department);
             }
         }
+        
     }
 }

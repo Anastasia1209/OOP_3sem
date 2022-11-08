@@ -4,67 +4,82 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace Lab07
 {
     class Program
     {
         static void Main(string[] args)
         {
-            MySet set1 = new MySet(1);
-            set1.AddItem("Masha");
-            set1.AddItem("Katya");
+            try
+            {
+                MySet<string> set1 = new MySet<string>(1);
+                set1.AddItem("Masha");
+                set1.AddItem("Katya");
 
-            MySet set2 = new MySet(2);
-            set2.AddItem("Nastya");
-            set2.AddItem("Artyom");
-            set2.AddItem("Polina");
-            set2.AddItem("Irina");
+                MySet<string> set2 = new MySet<string>(2);
+                set2.AddItem("Nastya");
+                set2.AddItem("Artyom");
+                set2.AddItem("Polina");
+                set2.AddItem("Irina");
 
-            MySet set3 = new MySet(3);
-            set3.AddItem("Andrey");
-            set3.AddItem("Pavel");
-            set3.AddItem("Dima");
+                MySet<string> set3 = new MySet<string>(3);
+                set3.AddItem("Andrey");
+                set3.AddItem("Pavel");
+                set3.AddItem("Dima");
 
-            MySet set4 = new MySet(4);
-            set4.AddItem("Yana");
-            set4.AddItem("");
-            set4.AddItem("Yura");
+                MySet<string> set4 = new MySet<string>(4);
+                set4.AddItem("Yana");
+                set4.AddItem("");
+                set4.AddItem("Yura");
 
-            Console.WriteLine("Перегрузка оператора -");
-            string name = "Artyom";
-            set2 = set2 - name;
-            set2.Show();
+                Console.WriteLine("Перегрузка оператора -");
+                string name = "Artyom";
+                set2 = set2 - name;
+                set2.Show();
 
-            Console.WriteLine("Перегрузка оператора *");
-            set2 = set2 * set1;
-            set2.Show();
+                Console.WriteLine("Перегрузка оператора *");
+                set2 = set2 * set1;
+                set2.Show();
 
-            Console.WriteLine("Перегрузка оператора <");
-            Console.WriteLine(set2 < set1);
+                Console.WriteLine("Перегрузка оператора <");
+                Console.WriteLine(set2 < set1);
 
-            Console.WriteLine("Перегрузка оператора >");
-            Console.WriteLine(set2 > set1);
+                Console.WriteLine("Перегрузка оператора >");
+                Console.WriteLine(set2 > set1);
 
-            Console.WriteLine("Перегрузка оператора &");
-            set3 = set3 & set1;
-            set3.Show();
+                Console.WriteLine("Перегрузка оператора &");
+                set3 = set3 & set1;
+                set3.Show();
 
-            Console.WriteLine("Разница между максимальным и минимальным");
-            set3.Show();
-            int a = set3.DiffMaxMin();
-            Console.WriteLine(a);
+                Console.WriteLine("Id, Developer, Organization:");
+                MySet<int>.Developer dev = new MySet<int>.Developer(4, "Golodok Anastasiya", "fit");
+                dev.Show();
 
+                MySet<int>.Production prod = new MySet<int>.Production(12, "BSTU");
+                prod.Show();
 
-            Console.WriteLine("Id, Developer, Organization:");
-            Developer dev = new Developer(4, "Golodok Anastasiya", "fit");
-            dev.Show();
+                MySet<int> intExample = new MySet<int>(3);
+                intExample.Add(6);
+                MySet<double> FlExample = new MySet<double>(6);
+                FlExample.Add(15.3006);
 
-            Production prod = new Production(12, "BSTU");
-            prod.Show();
+                Rose rose1 = new Rose("red", 15);
+                Rose rose2 = new Rose("pink", 12);
+                Rose rose3 = new Rose("white", 20);
 
-
-
+                MySet<Rose> ros = new MySet<Rose>(3);
+                ros.Add(rose1);
+                ros.Add(rose2);
+                ros.Add(rose3);
+            }
+            catch
+            {
+                Console.WriteLine("Error:(");
+            }
+            finally
+            {
+                Console.WriteLine("Все заебис))");
+            }
         }
     }
 }

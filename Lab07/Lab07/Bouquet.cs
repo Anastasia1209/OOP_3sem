@@ -69,7 +69,7 @@ namespace Lab07
         }
         public override string ToString()
         {
-            return $"Тип: {this.GetType()}, цпривета: {CostOfBouquet}, вид бумаги: {TypeOfPaper}";
+            return $"Тип: {this.GetType()}, цена букета: {CostOfBouquet}, вид бумаги: {TypeOfPaper}";
         }
     }
 
