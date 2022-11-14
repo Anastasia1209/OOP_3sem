@@ -17,7 +17,28 @@ namespace lab09
         static void Main(string[] args)
         {
 
-           
+            Console.ForegroundColor = ConsoleColor.Gray;
+            MyHashtable myhashtable = new();
+            myhashtable.Add("first_key", "first_value");
+            myhashtable.Add("second_key", "second_value");
+            myhashtable.Add("third_key", "third_value");
+            myhashtable.ShowMyHashTable();
+            Console.WriteLine("-------------------------------------------------------");
+
+            myhashtable.Delete("first_key");
+            Console.WriteLine("Deleting first_key...");
+            myhashtable.ShowMyHashTable();
+            Console.WriteLine("-------------------------------------------------------");
+
+            if (myhashtable.Search("first_key") != null)
+            {
+                Console.WriteLine("The key \"first_key\" is found.");
+            }
+            else
+            {
+                Console.WriteLine("The key \"first_key\" is not found.");
+            }
+            Console.WriteLine("-------------------------------------------------------");
 
             Hashtable hashtable = new Hashtable();
             hashtable.Add(12, "aaa");
