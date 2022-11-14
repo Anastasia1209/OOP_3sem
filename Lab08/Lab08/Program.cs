@@ -14,7 +14,7 @@ namespace lab08
         {
 
             Director dr1 = new Director(2, 300);
-            ClassEvent cl1 = new ClassEvent();
+            ClassString cl1 = new ClassString();
             dr1.increase += RaiseSal => Console.WriteLine(RaiseSal); 
             dr1.RaiseCategory(200);
 
@@ -28,7 +28,17 @@ namespace lab08
             dr3.RaiseCategory(300);
             dr3.Decrease(100);
 
+            // Методы строк
+            Console.WriteLine("\n Методы строк \n");
+
+            string DoOperation(string str, Func<string, string> operation) => operation(str);
+
+            string example = "Hello world?";
+            Console.WriteLine(DoOperation(example, ClassString.RemoveS));
+            Console.WriteLine(DoOperation(example, ClassString.AddToString));
+            Console.WriteLine(DoOperation(example, ClassString.RemoveSpase));
+            Console.WriteLine(DoOperation(example, ClassString.Upper));
+            Console.WriteLine(DoOperation(example, ClassString.Lower));
         }
     }
-
 }
