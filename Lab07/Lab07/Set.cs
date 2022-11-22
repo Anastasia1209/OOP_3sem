@@ -136,8 +136,8 @@ namespace Lab07
         }
         public void InFile()
         {
-            string path = "lab7.txt";
-            StreamWriter writer = new StreamWriter(path);
+            string path = @"D:\Универ\2курс\OOP_3sem\Lab07\Lab07\lab7.txt";
+            using StreamWriter writer = new StreamWriter(path);
             writer.WriteLine(Size);
             foreach(T item in collection)
             {
@@ -151,8 +151,8 @@ namespace Lab07
         }
         public MySet<T> GetFile()
         {
-            string path = "lab7.txt";
-            StreamReader reader = new StreamReader(path);
+            string path = @"D:\Универ\2курс\OOP_3sem\Lab07\Lab07\lab7.txt";
+            using StreamReader reader = new StreamReader(path);
             string? line;
             line = reader.ReadLine();
             string[] arr = line.Split(' ');

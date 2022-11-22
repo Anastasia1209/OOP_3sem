@@ -12,6 +12,21 @@ namespace Lab07
         {
             try
             {
+                Rose rose1 = new Rose("red", 15);
+                Rose rose2 = new Rose("pink", 12);
+                Rose rose3 = new Rose("white", 20);
+
+                MySet<Rose> ros = new MySet<Rose>(3);
+                ros.Add(rose1);
+                ros.Add(rose2);
+                ros.Add(rose3);
+
+                ros.collection.Add(rose1);
+                ros.collection.Add(rose2);
+                ros.collection.Add(rose3);
+                ros.InFile();
+
+
                 MySet<string> set1 = new MySet<string>(1);
                 set1.AddItem("Masha");
                 set1.AddItem("Katya");
@@ -62,15 +77,6 @@ namespace Lab07
                 intExample.Add(6);
                 MySet<double> FlExample = new MySet<double>(6);
                 FlExample.Add(15.3006);
-
-                Rose rose1 = new Rose("red", 15);
-                Rose rose2 = new Rose("pink", 12);
-                Rose rose3 = new Rose("white", 20);
-
-                MySet<Rose> ros = new MySet<Rose>(3);
-                ros.Add(rose1);
-                ros.Add(rose2);
-                ros.Add(rose3);
             }
             catch
             {
@@ -78,7 +84,7 @@ namespace Lab07
             }
             finally
             {
-                Console.WriteLine("Все заебис))");
+                Console.WriteLine("Все хорошо))");
             }
         }
     }
