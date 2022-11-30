@@ -1,0 +1,31 @@
+|Directories| [
+$RECYCLE.BIN
+-
+Bin
+DDB
+Google
+Images
+Maps
+Matlab909Win
+Nastia
+NetCracker
+netTest_sol
+Profiles
+Reports
+rispelali
+Ruby31-x64
+Samples
+System Volume Information
+Telegram Desktop
+Total Commander 10.00 Final
+Новая папка
+Образование
+просто так
+Универ
+фотки
+]
+|Files| [
+DumpStack.log.tmp
+IMG_7723.jpg
+VMware.Workstation.16.Pro.v16.1.1.17801498.exe
+]

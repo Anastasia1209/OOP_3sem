@@ -25,7 +25,7 @@ namespace Lab12
             
             using (StreamWriter writer = new StreamWriter(path, true))
             {
-                writer.WriteLine(message);
+                writer.WriteLine($"{DateTime.Now.ToString()}\n{message}\n------------------------------");
             }
         }
     }
