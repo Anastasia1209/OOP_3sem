@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "byre8dc9Z/w0bulGk932HhCP/x9J0P+CBzQJ6A3e1uQ2mjKlDHa/K0ZRG0K8EikEdjPAWzdaaUfRYmGpDlzp1g==",
+  "success": true,
+  "projectFilePath": "D:\\Универ\\2курс\\OOP_3sem\\Lab13\\Lab13\\Lab13.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Настенька\\.nuget\\packages\\microsoft.extensions.configuration\\2.2.0\\microsoft.extensions.configuration.2.2.0.nupkg.sha512",
+    "C:\\Users\\Настенька\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.2.0\\microsoft.extensions.configuration.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Настенька\\.nuget\\packages\\microsoft.extensions.configuration.binder\\2.2.0\\microsoft.extensions.configuration.binder.2.2.0.nupkg.sha512",
+    "C:\\Users\\Настенька\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\2.2.0\\microsoft.extensions.dependencyinjection.2.2.0.nupkg.sha512",
+    "C:\\Users\\Настенька\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.2.0\\microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Настенька\\.nuget\\packages\\microsoft.extensions.http\\2.2.0\\microsoft.extensions.http.2.2.0.nupkg.sha512",
+    "C:\\Users\\Настенька\\.nuget\\packages\\microsoft.extensions.logging\\2.2.0\\microsoft.extensions.logging.2.2.0.nupkg.sha512",
+    "C:\\Users\\Настенька\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.2.0\\microsoft.extensions.logging.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Настенька\\.nuget\\packages\\microsoft.extensions.options\\2.2.0\\microsoft.extensions.options.2.2.0.nupkg.sha512",
+    "C:\\Users\\Настенька\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
+    "C:\\Users\\Настенька\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\Настенька\\.nuget\\packages\\soapformatter\\1.1.9\\soapformatter.1.1.9.nupkg.sha512",
+    "C:\\Users\\Настенька\\.nuget\\packages\\soaphttpclient\\3.0.0\\soaphttpclient.3.0.0.nupkg.sha512",
+    "C:\\Users\\Настенька\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512",
+    "C:\\Users\\Настенька\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
+    "C:\\Users\\Настенька\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}
