@@ -53,15 +53,12 @@ namespace Lab13
     class Gladiolus : Bouquet
     {
         [NonSerialized]
-        private int numOfFlow;
-        public int NumOfFlow
-        {
-            get { return numOfFlow; }
-            set { numOfFlow = value; }
-        }
+        //private int numOfFlow;
+        public int NumOfFlow;
+        
         public Gladiolus(int num, int cost) : base(cost)
         {
-            numOfFlow = num;
+            NumOfFlow = num;
         }
         public override string ToString()
         {

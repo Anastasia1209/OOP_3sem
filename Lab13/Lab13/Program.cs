@@ -67,7 +67,45 @@ namespace Lab13
             var nameNodes = xRoot.SelectNodes("Name");
             foreach (object nameNode in nameNodes) Console.WriteLine((nameNode as XmlNode).Name);
 
+            //задание 5
+            XDocument Students = new XDocument();
+            XElement root = new XElement("Студенты");
 
-        }
+            XElement stud;
+            XElement name;
+            XAttribute year;
+
+            stud = new XElement("student");
+            name = new XElement("name");
+            name.Value = "Артем";
+            year = new XAttribute("year", "2003");
+            stud.Add(name);
+            stud.Add(year);
+            root.Add(stud);
+
+            stud = new XElement("stud");
+            name = new XElement("name");
+            name.Value = "Полина";
+            year = new XAttribute("year", "2004");
+            stud.Add(name);
+            stud.Add(year);
+            root.Add(stud);
+
+            Students.Add(root);
+            Students.Save(@"D:\Универ\2курс\OOP_3sem\Lab13\Lab13\NewXML.xml");
+
+            Console.WriteLine("Inter the year for searching: ");
+            string yearXML = Console.ReadLine();
+            var allAlbums = root.Elements("stud");
+
+            foreach (var item in allAlbums)
+            {
+                if (item.Attribute("year").Value == yearXML)
+                {
+                    Console.WriteLine(item.Value);
+                }
+            }
+
+    }
     }
 }
