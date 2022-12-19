@@ -145,7 +145,6 @@ namespace Lab11
                 Console.WriteLine(e.Message);
             }
         }
-
         public static void ExploreClass(string NameClass)
         {
             Reflector.OpenFile();

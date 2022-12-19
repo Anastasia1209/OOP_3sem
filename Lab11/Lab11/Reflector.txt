@@ -1,0 +1,38 @@
+Имя класса: Lab11.Flower. Имя сборки: Lab11, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+      Есть ли публичные конструкторы?            
+Есть
+                     Методы                      
+Void InformationClass()
+Boolean Equals(System.Object)
+System.String ToString()
+Void WriteFlower(System.String, Lab11.Flower[])
+Void WriteFlower(Int32, System.String, Lab11.Flower[])
+Int32 GetPrice()
+System.Type GetType()
+Int32 GetHashCode()
+             Поля и свойства                     
+System.String id
+System.String type
+System.String color
+Int32 price
+Int32 countOfFlowers
+                 Интерфейсы                      
+      Методы, у которых есть введ. параметр      
+Имя класса: Lab11.Employees. Имя сборки: Lab11, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+      Есть ли публичные конструкторы?            
+Есть
+                     Методы                      
+Void Work()
+Void OnDownSalary()
+Void OnUpLevel()
+System.String ToString()
+System.Type GetType()
+Boolean Equals(System.Object)
+Int32 GetHashCode()
+             Поля и свойства                     
+Int32 Salary
+Int32 Level
+Int32 Wallet
+                 Интерфейсы                      
+      Методы, у которых есть введ. параметр      
+Boolean Equals(System.Object)
