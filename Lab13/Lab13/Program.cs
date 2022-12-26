@@ -75,7 +75,7 @@ namespace Lab13
             XElement name;
             XAttribute year;
 
-            stud = new XElement("student");
+            stud = new XElement("stud");
             name = new XElement("name");
             name.Value = "Артем";
             year = new XAttribute("year", "2003");
