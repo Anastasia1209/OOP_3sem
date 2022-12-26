@@ -8,18 +8,23 @@ namespace Lab12
     {
         static void Main(string[] args)
         {
-            GAYDiskInfo.GetDiskInfo();
-           
-            GAYFileInfo.GetFileInfo();
-            
-            GAYDirInfo.GetDirInfo();
-            
+            try
+            {
+                GAYDiskInfo.GetDiskInfo();
+                GAYFileInfo.GetFileInfo();
+                GAYDirInfo.GetDirInfo();
+                GAYLog.WriteInLog();
 
-            GAYFileManager.InspectDrive(@"D:\");
-            GAYFileManager.CopyFiles(@"D:\Универ\2курс\OOP_3sem\Lab12\Lab12\", ".txt");
-            GAYFileManager.Archive(@"D:\Универ\2курс\OOP_3sem\Lab12\Lab12\Archivetest",
-                    @"D:\Универ\2курс\OOP_3sem\Lab12\Lab12\Unarchivetest");
-            FindInfo();
+                GAYFileManager.InspectDrive(@"D:\");
+                GAYFileManager.CopyFiles(@"D:\Универ\2курс\OOP_3sem\Lab12\Lab12\", ".txt");
+                GAYFileManager.Archive(@"D:\Универ\2курс\OOP_3sem\Lab12\Lab12\GAYInspect\GAYFiles\",
+                        @"D:\Универ\2курс\OOP_3sem\Lab12\Lab12\Unarchivetest");
+                FindInfo();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
 
         public static void FindInfo()
@@ -35,7 +40,7 @@ namespace Lab12
                 {
                     isActual = false;
                     textline = stream.ReadLine();
-                    if (textline != "" && DateTime.Parse(textline).Day == DateTime.Now.Day)
+                    if (textline != "" && DateTime.Parse(textline).Hour == DateTime.Now.Hour)
                     {
                         isActual = true;
                         textline += "\n";

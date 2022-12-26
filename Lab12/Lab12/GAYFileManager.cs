@@ -50,13 +50,12 @@ namespace Lab12
 
         public static void Archive(string pathFrom, string pathTo)
         {
-
-           /* Directory.Delete(@"D:\Универ\2курс\OOP_3sem\Lab12\Lab12\Unarchivetest\", true);*/
-
-            if (!File.Exists($@"{pathFrom}.zip"))
-                ZipFile.CreateFromDirectory(pathFrom, $@"{pathFrom}.zip");
-
-            ZipFile.ExtractToDirectory($@"{pathFrom}.zip", pathTo);
+            if (!File.Exists($@"D:\Универ\2курс\OOP_3sem\Lab12\Lab12\Archivetest.zip"))
+            {
+                ZipFile.CreateFromDirectory(pathFrom, $@"D:\Универ\2курс\OOP_3sem\Lab12\Lab12\Archivetest.zip");
+            }
+            if(!File.Exists($@"D:\Универ\2курс\OOP_3sem\Lab12\Lab12\Unarchivetest\example1.txt"))
+            ZipFile.ExtractToDirectory($@"D:\Универ\2курс\OOP_3sem\Lab12\Lab12\Archivetest.zip", pathTo);
         }
     }
 }

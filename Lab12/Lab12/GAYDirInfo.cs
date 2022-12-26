@@ -10,7 +10,7 @@ namespace Lab12
     {
         public static void GetDirInfo()
         {
-            //  string path = Path.GetFullPath(@"D:\Универ\2курс\OOP_3sem\Lab12\Lab12\log.txt");
+            
             string path = @"D:\Универ\2курс\OOP_3sem\Lab12\Lab12\log.txt";
             string dirName = @"D:\Универ\2курс\OOP_3sem";
             string dirInfoLog = "";

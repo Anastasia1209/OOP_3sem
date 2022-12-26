@@ -3,10 +3,18 @@ $RECYCLE.BIN
 -
 Bin
 DDB
+GAY-2022
 Google
 Images
+Lab14_sol
+Lab_11
+Lab_12
+Lab_13
+Lab_14
+Lab_15
 Maps
 Matlab909Win
+MKV-2021
 Nastia
 NetCracker
 netTest_sol
@@ -27,5 +35,6 @@ Total Commander 10.00 Final
 |Files| [
 DumpStack.log.tmp
 IMG_7723.jpg
+MKV-2021.rar
 VMware.Workstation.16.Pro.v16.1.1.17801498.exe
 ]

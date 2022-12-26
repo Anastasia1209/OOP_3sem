@@ -12,7 +12,6 @@ namespace Lab12
         public static void GetFileInfo()
         {
 
-            //  string path = Path.GetFullPath(@"D:\Универ\2курс\OOP_3sem\Lab12\Lab12\log.txt");
             string path = @"D:\Универ\2курс\OOP_3sem\Lab12\Lab12\log.txt";
             string fileInfoLog = "";
 
@@ -20,12 +19,13 @@ namespace Lab12
 
             if (fileInf.Exists)
             {
-                fileInfoLog = 
+                fileInfoLog =
                     "\nПолный путь:       " + path +
                     "\nРазмер:            " + fileInf.Length +
                     "\nРасширение:        " + fileInf.Extension +
                     "\nИмя файла:         " + fileInf.Name +
-                    "\nВремя изменения:   " + fileInf.CreationTime;
+                    "\nВремя создания:    " + fileInf.CreationTime +
+                    "\nВремя изменения:   " + fileInf.LastWriteTime;
             }
             GAYLog.WriteInTxt(path, fileInfoLog);
         }

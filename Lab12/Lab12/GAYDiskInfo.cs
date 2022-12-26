@@ -25,13 +25,6 @@ namespace Lab12
                     "\nДоступный объем: " + drive.TotalFreeSpace +
                     "\nМетка тома: " + drive.VolumeLabel +
                     "\nФайловая система: " + drive.DriveFormat;
-               
-             /*   Console.WriteLine($"Название: {drive.Name}");
-                Console.WriteLine($"Объем: {drive.TotalSize}");
-                Console.WriteLine($"Доступный объем: {drive.TotalFreeSpace}");
-                Console.WriteLine($"Метка тома: {drive.VolumeLabel}");
-                Console.WriteLine($"Файловая система: {drive.DriveFormat}");
-                Console.WriteLine("-------------------------------");*/
 
             GAYLog.WriteInTxt(path, diskInfo);
             }
